@@ -1,15 +1,31 @@
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
-import { FaBasketballBall, FaBook, FaRobot, FaJava, FaGithub, FaTwitter, FaWeixin } from 'react-icons/fa'
-import { SiSpring, SiNextdotjs, SiMongodb } from 'react-icons/si'
-import { GiPokerHand } from 'react-icons/gi'
+import {
+  FaRobot,
+  FaGithub,
+  FaTwitter,
+  FaWeixin,
+  FaNodeJs,
+} from 'react-icons/fa'
+import {
+  SiNextdotjs,
+  SiMongodb,
+  SiJavascript,
+  SiReact,
+} from 'react-icons/si'
+import {
+  GiBoxCutter,
+  GiFishing,
+  GiGardeningShears,
+  GiHiking,
+} from 'react-icons/gi'
 import { HiMail } from 'react-icons/hi'
-import { BsRobot, BsGear } from 'react-icons/bs'
+import { BsGear } from 'react-icons/bs'
 import { Container } from '@/components/common/Container'
 
 const meta = {
-    title: '关于我 - Just be funny',
-    description: '开发工程师，AI 爱好者，篮球迷，终身学习者。每周发送 AI 精选文章，欢迎订阅！',
+    title: '关于我 - Slow is smooth, smooth is fast',
+    description: '前端开发工程师，兴趣广泛，终身学习者，不定时更新文章，欢迎订阅！',
     url: `${WEBSITE_HOST_URL}/about`,
 }
 
@@ -34,35 +50,35 @@ export const metadata: Metadata = {
 }
 
 const skills = [
-    { icon: FaJava, name: 'Java', color: 'text-red-500' },
-    { icon: SiSpring, name: 'Spring', color: 'text-green-500' },
+    { icon: SiJavascript, name: 'JavaScript', color: 'text-red-500' },
+    { icon: SiReact, name: 'React', color: 'text-blue-500' },
     { icon: SiMongodb, name: 'MongoDB', color: 'text-green-600' },
     { icon: SiNextdotjs, name: 'Next.js', color: 'text-gray-800 dark:text-gray-200' },
-    { icon: BsRobot, name: 'RAG', color: 'text-purple-500' },
+    { icon: FaNodeJs, name: 'Nodejs', color: 'text-green-500' },
     { icon: BsGear, name: 'Workflow', color: 'text-blue-500' },
     { icon: FaRobot, name: 'Agent', color: 'text-emerald-500' },
 ]
 
 const interests = [
     {
-        icon: FaBasketballBall,
-        title: '篮球',
-        description: '热爱篮球运动，享受团队协作的乐趣'
+        icon: GiHiking,
+        title: '户外徒步',
+        description: '享受户外新鲜空气的同时又能锻炼身体'
     },
     {
-        icon: GiPokerHand,
-        title: '德州扑克',
-        description: '享受策略思考和决策的乐趣'
+        icon: GiFishing,
+        title: '钓鱼',
+        description: '台钓路亚均有涉猎'
     },
     {
-        icon: FaBook,
-        title: '阅读',
-        description: '保持学习的习惯，探索不同领域的知识'
+        icon: GiBoxCutter,
+        title: '木作',
+        description: '木艺创作有时候和写代码很相似'
     },
     {
-        icon: FaRobot,
-        title: 'AI 产品',
-        description: '关注并评测最新的 AI 产品和技术'
+        icon: GiGardeningShears,
+        title: '园艺',
+        description: '园艺是一门需要投入时间和精力的事情'
     },
 ]
 
@@ -70,28 +86,28 @@ const contacts = [
     {
         icon: FaWeixin,
         name: '微信',
-        value: 'xingxing174556571',
+        value: 'mondoura',
         color: 'text-green-500',
     },
     {
         icon: FaGithub,
         name: 'GitHub',
-        value: 'ginobefun',
-        link: 'https://github.com/ginobefun',
+        value: 'coocier',
+        link: 'https://github.com/coocier',
         color: 'text-gray-800 dark:text-gray-200',
     },
     {
         icon: FaTwitter,
         name: 'Twitter',
-        value: '@hongming731',
-        link: 'https://twitter.com/hongming731',
+        value: '@leecoocie',
+        link: 'https://twitter.com/leecoocie',
         color: 'text-blue-400',
     },
     {
         icon: HiMail,
         name: '邮件',
-        value: 'hi@gino.bot',
-        link: 'mailto:hi@gino.bot',
+        value: 'leecoocie@gmail.com',
+        link: 'mailto:leecoocie@gmail.com',
         color: 'text-red-500',
     },
 ]
@@ -102,15 +118,12 @@ export default function About() {
             <div className="py-12 sm:py-16 lg:py-20">
                 {/* 头部介绍 */}
                 <div>
-                    <h1 className="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
-                        Just be funny~
+                    <h1 className="py-2 bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
+                      Slow is smooth, smooth is fast
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
-                        👋 你好！我是一名开发工程师，负责架构设计和核心功能开发。在空闲时间，我会研究人工智能和 Web3 项目，同时运营着
-                        <a href="https://bestblogs.dev" target="_blank" rel="noopener noreferrer" className="px-1 text-blue-500 hover:text-blue-600">
-                            bestblogs.dev
-                        </a>
-                        ，每周发送 AI 精选文章，目前已有超过 3000 位订阅者。我相信技术不仅仅是工具，更是创造价值和改变世界的力量。
+                        👋 你好！我是一名前端开发工程师，目前辞职在家做独立开发，React + TypeScript + Node.js + MongoDB 是我的主要技术栈，整套技术闭环让我能独立把产品从 0 推到线上。
+                      同时在平面设计上也有些许经验，Adobe XD / Sketch / Photoshop 熟练，能独立输出 UI 组件、海报与运营物料
                     </p>
                 </div>
 
@@ -155,7 +168,7 @@ export default function About() {
                 <div className="mt-16">
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">关于博客</h2>
                     <p className="mt-4 text-gray-600 dark:text-gray-400">
-                        这里是我的数字花园，记录日常学习和思考的内容。你可以找到关于编程技术、人工智能、产品设计的文章，
+                        这里是我的数字花园，记录日常学习和思考的内容。你可以找到关于编程技术、产品设计、人生思考的文章，
                         也可以看到我的阅读笔记和生活随想。希望这些内容能够帮助到你，也欢迎与我交流讨论。
                     </p>
                 </div>
@@ -187,25 +200,25 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* 订阅提示 */}
-                <div className="mt-16">
-                    <div className="rounded-2xl bg-blue-50 p-6 dark:bg-blue-900/20">
-                        <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100">
-                            📬 免费订阅我的 AI 周刊
-                        </h3>
-                        <p className="mt-2 text-blue-800 dark:text-blue-200">
-                            每周精选高质量的 AI 文章，帮助你跟上人工智能的最新发展。已有超过 3000 位读者订阅，欢迎加入我们！
-                        </p>
-                        <a
-                            href="https://www.bestblogs.dev/#subscribe"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-4 inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
-                        >
-                            立即订阅
-                        </a>
-                    </div>
-                </div>
+                {/*/!* 订阅提示 *!/*/}
+                {/*<div className="mt-16">*/}
+                {/*    <div className="rounded-2xl bg-blue-50 p-6 dark:bg-blue-900/20">*/}
+                {/*        <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100">*/}
+                {/*            📬 免费订阅我的 AI 周刊*/}
+                {/*        </h3>*/}
+                {/*        <p className="mt-2 text-blue-800 dark:text-blue-200">*/}
+                {/*            每周精选高质量的 AI 文章，帮助你跟上人工智能的最新发展。已有超过 3000 位读者订阅，欢迎加入我们！*/}
+                {/*        </p>*/}
+                {/*        <a*/}
+                {/*            href="https://www.bestblogs.dev/#subscribe"*/}
+                {/*            target="_blank"*/}
+                {/*            rel="noopener noreferrer"*/}
+                {/*            className="mt-4 inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"*/}
+                {/*        >*/}
+                {/*            立即订阅*/}
+                {/*        </a>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </Container>
     )

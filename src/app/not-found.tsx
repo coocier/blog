@@ -7,7 +7,7 @@ export default function NotFound() {
       {/* 404 图片 */}
       <div className="relative mb-8 h-64 w-64 animate-float sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96">
         <Image
-          src="/images/404.jpeg"
+          src="/images/404.jpg"
           alt="404 页面未找到"
           fill
           className="object-contain"

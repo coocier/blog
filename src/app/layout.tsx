@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     applicationName: WEBSITE_NAME,
     authors: [{ name: WEBSITE_AUTHOR, url: WEBSITE_HOST_URL }],
     generator: 'Next.js',
-    keywords: ['博客', '技术', '人工智能', '产品设计', '编程', 'Java', 'Workflow', 'Agent'],
+    keywords: ['博客', '技术', '人工智能', '产品设计', '编程', 'JavaScript', 'React', 'Workflow', 'Agent'],
     referrer: 'origin-when-cross-origin',
     creator: WEBSITE_AUTHOR,
     publisher: WEBSITE_AUTHOR,
