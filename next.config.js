@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'media.ginonotes.com',
+        hostname: 'images.2linescraft.xyz',
       },
       {
         protocol: 'https',
