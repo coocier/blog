@@ -41,3 +41,7 @@ next-env.d.ts
 # Media management
 .env
 backups/
+
+# editor
+.idea
+.vscode
